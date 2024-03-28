@@ -1,6 +1,6 @@
-name: 'AWS S3 Github Action'
-description: 'This action allows to use commands similar to AWS S3 CLI.'
-author: 'RE Team'
+name: "AWS S3 Github Action"
+description: "This action allows to use commands similar to AWS S3 CLI."
+author: "RE Team"
 runs:
   using: docker
   image: Dockerfile
@@ -32,3 +32,14 @@ inputs:
   flags:
     description: "Additional query flags."
     required: false
+  ignore-failure:
+    description: Optional, do not fail the gh-action in case of pre-commit check failure
+    required: false
+    default: "false"
+outputs:
+  status:
+    description: Provide the exit code returned by the command
+    value: ${{ outputs.status }}
+  logs:
+    description: Logs from the command
+    value: ${{ outputs.logs }}

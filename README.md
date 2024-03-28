@@ -54,6 +54,7 @@ SonarSource GitHub Action for AWS S3
 | `aws_region` | Define the region of the bucket. S3 namespace is global but the bucket is regional.                                               | -       |
 | `metadata_service_timeout` | The number of seconds to wait until the metadata service request times out                                                        | -       |
 | `flags` | Additional query flags                                                                                                            | -       |
+| `ignore-failure` | Used to not fail the gh-action in case of pre-commit check failure | `false`                    |
 
 ## Versioning
 

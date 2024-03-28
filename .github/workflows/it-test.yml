@@ -15,6 +15,7 @@ jobs:
         uses: ./
         with:
          command: "invalid-command-name"
+         ignore-failure: true
       - uses: nick-fields/assert-action@aa0067e01f0f6545c31755d6ca128c5a3a14f6bf # v2
         name: Then outputs.status value must be 0 as the project itself makes use of pre-commit validation
         with:

@@ -16,7 +16,7 @@ function usage_docs {
 function get_configuration_settings {
   if [ -z "$INPUT_AWS_ACCESS_KEY_ID" ]
   then
-    echo "AWS Access Key Id was not provided. Using configuration from previous step."
+    echo "test."
   else
     aws configure set aws_access_key_id "$INPUT_AWS_ACCESS_KEY_ID"
   fi
